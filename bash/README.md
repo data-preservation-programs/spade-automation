@@ -11,13 +11,15 @@ Note: script does not auto clear mpool for you, you need to do that as needed. F
 instance, you may want to wait for the gas fees to come down.
 
 ## step 1 reserve X number of deals.
-./spade-make-reservation.sh <miner-id> <numberofdeals>
-./spade-make-reservation.sh f0xxxxxx 32
+- `./spade-make-reservation.sh <miner-id> <numberofdeals>`
+- `./spade-make-reservation.sh f0xxxxxx 32`
+  
 wait for deals to show up in pending proposals.
 
 ## step 2 process the pending proposals.
-./spade-process-pending.sh <miner-id> <pathtodownloadcarsfiles>
-./spade-process-pending.sh f0xxxxxx /path/download/cars
+- `./spade-process-pending.sh <miner-id> <pathtodownloadcarsfiles>`
+- `./spade-process-pending.sh f0xxxxxx /path/download/cars`
+
 it checks for messages stuck in mpool, and also checks that there are not more than 32 sealings jobs in PC1 state.  edit the file to adjust.
 will just loop on hold while mpool has messages.
 
