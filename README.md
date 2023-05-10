@@ -5,3 +5,5 @@ Automation that storage providers could use in tandem with
 
 ## Python
 - [Ace of Spades](https://github.com/jcrowthe/ace_of_spades) -- written by @jcrowthe
+- WIP [filecoin-spade-sp](https://github.com/LexLuthr/filecoin-spade-sp/blob/main/spade.py) --
+  written by @LexLuthr
